@@ -17,7 +17,7 @@ const object1 = {
 
 const findKey = function (object, callback) {
   for (let key in object) {
-    const value = object[key]
+    const value = object[key] //{ stars: 3 }
     if (callback(value))
       return key;
   }

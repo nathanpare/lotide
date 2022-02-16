@@ -16,4 +16,4 @@ const countLetters = function(string) {
   }, {});
 }
 
-console.log(countLetters("lighthouse"));
+console.log(countLetters("lighthouse in the house"));
