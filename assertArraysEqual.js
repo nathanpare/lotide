@@ -18,3 +18,5 @@ const eqArrays = function(a, b) {
   return true;
 };
 
+module.exports = assertArraysEqual;
+
