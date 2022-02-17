@@ -33,3 +33,5 @@ let object1 = {name: "Nathan", age: 22, friends: [1,2,3]};
 let object2 = {name: "Nathan", age: 22, friends: [1,2,3]};
 
 console.log(eqObjects(object1, object2));
+
+module.exports = eqObjects;

@@ -39,3 +39,5 @@ const results2 = takeUntil(data2, x => x === ",");
 
 console.log(assertArraysEqual([ 1, 2, 5, 7, 8 ], takeUntil(data1, x => x < 0)));
 console.log(assertArraysEqual([ "I've", 'been', 'to', 'Hollywood' ], takeUntil(data2, x => x === ",")));
+
+module.exports = takeUntil;
