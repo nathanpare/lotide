@@ -1,15 +1,4 @@
-const eqArrays = function(a, b) {
-  if (a.length !== b.length) {
-    return false;
-  }
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
+const eqArrays = require("./eqArrays");
 
 const eqObjects = function(a, b) {
   if (Object.keys(a).length !== Object.keys(b).length) return false
@@ -28,10 +17,5 @@ const eqObjects = function(a, b) {
   } 
   return true;
 };
-
-let object1 = {name: "Nathan", age: 22, friends: [1,2,3]};
-let object2 = {name: "Nathan", age: 22, friends: [1,2,3]};
-
-console.log(eqObjects(object1, object2));
 
 module.exports = eqObjects;

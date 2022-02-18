@@ -1,5 +1,4 @@
 const tail = require('../tail');
-const assertArraysEqual = require('../assertArraysEqual');
 const assert = require('chai').assert;
 
 describe("#tail", () => {

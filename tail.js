@@ -1,6 +1,3 @@
-const assertArraysEqual = require("./assertArraysEqual");
-
-
 function tail(words) {
   let arr = [];
   for (let i = 0; i < words.length; i++) {
@@ -13,5 +10,3 @@ function tail(words) {
   return arr;
 }; 
 module.exports = tail;
-
-

@@ -9,9 +9,7 @@ const letterPositions = function(sentence) {
       results[currentLetter].push(i);
     }
   }
-  console.log(results);
   return results;
 };
-letterPositions("hello");
 
 module.exports = letterPositions;

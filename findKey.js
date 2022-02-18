@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return (`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    return (`🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const object1 = {  
 "Blue Hill": { stars: 1 },
 "Akaleri":   { stars: 3 },
