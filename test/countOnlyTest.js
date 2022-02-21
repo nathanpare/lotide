@@ -17,7 +17,7 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 
 describe("#countOnly", () => {
   it("returns undefined for ['Karima'] ", () => {
-    assert.equal(result1["Karima"], undefined)
+    assert.equal(result1["Karima"], undefined);
   });
 
   it("returns 2 for ['Fang']", () => {

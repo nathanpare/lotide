@@ -1,20 +1,21 @@
 const eqArrays = require("./eqArrays");
-
-const eqObjects = function(a, b) {
-  if (Object.keys(a).length !== Object.keys(b).length) return false
-  for (let key in a) { 
-  if (!b[key]) {
-      return false
-    }
-  if (Array.isArray(a[key])) {
-    const result = eqArrays(a[key],b[key]);
-    if (!result) {
+//function eqObjects checks that two given objects deeply equal
+//one another
+const eqObjects = function(firstObj, secondObj) {
+  if (Object.keys(firstObj).length !== Object.keys(secondObj).length) return false;
+  for (let key in firstObj) {
+    if (!secondObj[key]) {
       return false;
-    } 
-  } else if (a[key] !== b[key]) {
-    return false;
+    }
+    if (Array.isArray(firstObj[key])) {
+      const result = eqArrays(firstObj[key],secondObj[key]);
+      if (!result) {
+        return false;
+      }
+    } else if (firstObj[key] !== secondObj[key]) {
+      return false;
+    }
   }
-  } 
   return true;
 };
 

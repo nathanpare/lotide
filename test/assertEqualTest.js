@@ -1,6 +1,6 @@
 const assertEqual = require('../assertEqual');
 
-console.log(assertEqual(true, true));
-console.log(assertEqual(false, false));
-console.log(assertEqual(10, 10));
-console.log(assertEqual("Nathan", "Nathan"));
+assertEqual(true, true);
+assertEqual(false, false);
+assertEqual(10, 10);
+assertEqual("Nathan", "Nathan");

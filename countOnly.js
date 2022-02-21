@@ -1,4 +1,6 @@
-const countOnly = function (allItems, itemsToCount) {
+//function countOnly counts the amount of amount of times
+//that a subset of items (itemsToCount) occur in a given array
+const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (let item of allItems) {
     if (itemsToCount[item]) {
@@ -9,8 +11,7 @@ const countOnly = function (allItems, itemsToCount) {
       }
     }
   }
-
   return results;
-}
+};
 
 module.exports = countOnly;

@@ -1,8 +1,8 @@
 const findKeyByValue = require("../findKeyByValue");
 const assert = require('chai').assert;
 
-const bestTVShowsByGenre = { 
-  sci_fi: "Black Mirror",
+const bestTVShowsByGenre = {
+  sciFi: "Black Mirror",
   comedy: "Modern Family",
   drama:  "Ozark"
 };
